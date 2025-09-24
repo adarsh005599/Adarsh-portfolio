@@ -83,7 +83,7 @@
             position: fixed;
             top: 0;
             width: 100%;
-            background: rgba(10, 10, 10, 0.9);
+            background: rgba(10, 10, 10, 0.824);
             backdrop-filter: blur(20px);
             z-index: 100;
             padding: 1rem 0;
@@ -434,33 +434,38 @@
 
 
         /* Certificates Section */
-        .certificates-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-top: 2rem;
-        }
+       .certificates-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
 
-        .certificate-card {
-            background: var(--card-bg);
-            padding: 2rem;
-            border-radius: 15px;
-            text-align: center;
-            transition: all 0.3s ease;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-        }
+.certificate-card {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.564);
+}
 
-        .certificate-card:hover {
-            transform: scale(1.05);
-            box-shadow: var(--shadow);
-            border-color: var(--accent-teal);
-        }
+.certificate-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
 
-        .certificate-icon {
-            font-size: 3rem;
-            color: var(--accent-teal);
-            margin-bottom: 1rem;
-        }
+
+.certificate-content {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.468);
+    color: #fff;
+    text-align: center;
+}
 
         /* Contact Section */
         .contact-content {
