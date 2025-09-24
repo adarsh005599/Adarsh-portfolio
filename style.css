@@ -186,6 +186,8 @@
 }
 
 .hero-title {
+    padding-top: 20px;
+    margin-top: 50px;
   font-size: 3rem;
   font-weight: 700;
   margin-bottom: 1rem;
@@ -312,10 +314,18 @@
             align-items: center;
         }
 
+        /* .code-qt {
+            
+            gap: 5rem;
+            margin-bottom: 10px;
+            color: red;
+            font:bold;
+
+        } */
         .about-text {
             font-size: 1.1rem;
             line-height: 1.8;
-            color: var(--text-secondary);
+            color:rgb(235, 235, 235);
         }
 
         .skills-grid {

@@ -37,7 +37,7 @@
 
         // Typing Animation
         function typeWriter() {
-            const text = "Backend Developer | AI Enthusiast | Open Source Contributor";
+            const text = "Full Stack Developer | AI Enthusiast | Open Source Contributor";
             const typingElement = document.getElementById('typing-text');
             let i = 0;
             
