@@ -6,7 +6,9 @@
     <title>Adarsh-Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="adarsh.png">
     <link rel="stylesheet" href="portfolio.css">
+
 </head>
 <body>
     <!-- Loading Screen -->
@@ -27,7 +29,7 @@
                 <li><a href="#projects" class="nav-link">Projects</a></li>
                 <li><a href="#certificates" class="nav-link">Certificates</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
-                
+
             </ul>
             <button class="theme-toggle" onclick="toggleTheme()">
                 <i class="fas fa-moon"></i>
@@ -35,26 +37,35 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <div class="hero-image">
-                <img src="adarsh.img.jpg">
-            </div>
-            <h1 class="hero-title">Adarsh Singh</h1>
-            <p class="hero-subtitle">
-                <span class="typing-animation" id="typing-text">Full-stack Developer | AI Enthusiast | Open Source Contributor</span>
-            </p>
-            <div class="hero-buttons">
-                <a href="#" class="btn btn-primary" onclick="downloadResume()">
-                    <i class="fas fa-download"></i> Download Resume
-                </a>
-                <a href="#projects" class="btn btn-secondary">
-                    <i class="fas fa-code"></i> View Projects
-                </a>
-            </div>
-        </div>
-    </section>
+   <!-- Hero Section -->
+<!-- Hero Section -->
+<section id="home" class="hero">
+  <div class="hero-container">
+    <!-- Left Side (Text) -->
+    <div class="hero-content">
+      <h1 class="hero-title">Adarsh Singh</h1>
+      <p class="hero-subtitle">
+        <span class="typing-animation" id="typing-text">
+          Full-stack Developer | AI Enthusiast | Open Source Contributor
+        </span>
+      </p>
+      <div class="hero-buttons">
+        <a href="#" class="btn btn-primary" onclick="downloadResume()">
+          <i class="fas fa-download"></i> Download Resume
+        </a>
+        <a href="#projects" class="btn btn-secondary">
+          <i class="fas fa-code"></i> View Projects
+        </a>
+      </div>
+    </div>
+
+    <!-- Right Side (Image) -->
+    <div class="hero-image">
+      <img src="adarsh.png" alt="Adarsh Singh">
+    </div>
+  </div>
+</section>
+
 
     <!-- About Section -->
     <section id="about" class="section fade-in">
@@ -86,50 +97,91 @@
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="section fade-in">
-        <h2 class="section-title">Featured Projects</h2>
-        <div class="projects-grid">
-            <div class="project-card" onclick=openModal {<a href="https://imagify-fullstack-frontend.onrender.com/">Full-Stack</>/>}
-                <div class="project-image"></div>
-                <div class="project-content">
-                    <h3 class="project-title">AI Chat Assistant</h3>
-                    <p class="project-description">A sophisticated chatbot powered by GPT-4 with real-time conversation capabilities and context awareness.</p>
-                    <div class="project-tags">
-                        <span class="tag">Python</span>
-                        <span class="tag">OpenAI</span>
-                        <span class="tag">FastAPI</span>
-                        <span class="tag">WebSocket</span>
-                    </div>
-                </div>
-            </div>
-            <div class="project-card" onclick="openModal('project2')">
-                <div class="project-image"></div>
-                <div class="project-content">
-                    <h3 class="project-title">E-commerce Platform</h3>
-                    <p class="project-description">Full-stack e-commerce solution with microservices architecture, payment integration, and admin dashboard.</p>
-                    <div class="project-tags">
-                        <span class="tag">Node.js</span>
-                        <span class="tag">React</span>
-                        <span class="tag">MongoDB</span>
-                        <span class="tag">Stripe</span>
-                    </div>
-                </div>
-            </div>
-            <div class="project-card" onclick="openModal('project3')">
-                <div class="project-image"></div>
-                <div class="project-content">
-                    <h3 class="project-title">Data Analytics Tool</h3>
-                    <p class="project-description">Advanced analytics platform for processing large datasets with machine learning insights and visualization.</p>
-                    <div class="project-tags">
-                        <span class="tag">Python</span>
-                        <span class="tag">Pandas</span>
-                        <span class="tag">Plotly</span>
-                        <span class="tag">Docker</span>
-                    </div>
-                </div>
-            </div>
+<section id="projects" class="section fade-in">
+  <h2 class="section-title">Featured Projects</h2>
+  <div class="projects-grid">
+
+    <!-- Project 1 -->
+    <div class="project-card">
+      <img src="chatapp.png" alt="AI Chat Assistant" class="project-image">
+      <div class="overlay">
+        <h3>AI Chat Assistant</h3>
+        <p>GPT-powered chatbot with real-time conversation capabilities.</p>
+        <div class="project-links">
+          <a href="https://quickchat-6vkt.onrender.com/" target="_blank">Live Demo</a>
+          <a href="https://github.com/adarsh005599/Chat-App" target="_blank">GitHub</a>
         </div>
-    </section>
+      </div>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="project-card">
+      <img src="starkdesk.png" alt="6-AI-powered Platform" class="project-image">
+      <div class="overlay">
+        <h3>6-AI-powered Platform</h3>
+        <p>Full-stack platform with payments & microservices.</p>
+        <div class="project-links">
+          <a href="https://star-desk.vercel.app/" target="_blank">Live Demo</a>
+          <a href="https://github.com/adarsh005599/StarDesk" target="_blank">GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="project-card">
+      <img src="fixmycity.png" alt="civic gov" class="project-image">
+      <div class="overlay">
+        <h3>Complaint based goverment Website</h3>
+        <p>Citizens can Complaint's about the bad infra and civic issue and officials can review their Complaint .</p>
+        <div class="project-links">
+          <a href="https://jharkhand-fix-my-city.vercel.app/" target="_blank">Live Demo</a>
+          <a href="https://github.com/adarsh005599/Jharkhand--fixMyCity" target="_blank">GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 4 -->
+    <div class="project-card">
+      <img src="imagify.png" alt="imagify" class="project-image">
+      <div class="overlay">
+        <h3>Transform text to image </h3>
+        <p>Modern text to image gen using Clipdrop Api with animations & dark mode.</p>
+        <div class="project-links">
+          <a href="https://imagify-fullstack-frontend.onrender.com" target="_blank">Live Demo</a>
+          <a href="https://github.com/adarsh005599/IMAGIFY-FullStack" target="_blank">GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 5 -->
+    <div class="project-card">
+      <img src="comrade.png" alt="Weather App" class="project-image">
+      <div class="overlay">
+        <h3>AI- ChatBot using Gemini API</h3>
+        <p>real time chat assistant with real-time Gemini API integration.</p>
+        <div class="project-links">
+          <a href="https://comrade-ai.vercel.app/" target="_blank">Live Demo</a>
+          <a href="https://github.com/adarsh005599/CivicAI-Pulse" target="_blank">GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 6 -->
+    <div class="project-card">
+      <img src="clockin.png" alt="Task Manager" class="project-image">
+      <div class="overlay">
+        <h3>Bar code applications Download</h3>
+        <p>Task management and application for QR code.</p>
+        <div class="project-links">
+          <a href="https://clock-in-gdgiilm.vercel.app/" target="_blank">Live Demo</a>
+          <a href="https://github.com/adarsh005599/ClockIn-GDGIILM" target="_blank">GitHub</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
 
     <!-- Certificates Section -->
     <section id="certificates" class="section fade-in">
