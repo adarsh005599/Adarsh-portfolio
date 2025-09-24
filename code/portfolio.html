@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adarsh-Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen">
+        <div class="loading-text">Loading...</div>
+    </div>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">AS</div>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#certificates" class="nav-link">Certificates</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                
+            </ul>
+            <button class="theme-toggle" onclick="toggleTheme()">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-image">
+                <img src="adarsh.img.jpg">
+            </div>
+            <h1 class="hero-title">Adarsh Singh</h1>
+            <p class="hero-subtitle">
+                <span class="typing-animation" id="typing-text">Full-stack Developer | AI Enthusiast | Open Source Contributor</span>
+            </p>
+            <div class="hero-buttons">
+                <a href="#" class="btn btn-primary" onclick="downloadResume()">
+                    <i class="fas fa-download"></i> Download Resume
+                </a>
+                <a href="#projects" class="btn btn-secondary">
+                    <i class="fas fa-code"></i> View Projects
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section fade-in">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>I'm a passionate Full-Stack developer building scalable web applications and AI-powered solutions. I specialize in Python, Node.js, with a deep interest in machine learning and open-source contributions.</p>
+                <p>When I'm not coding, you'll find me exploring the latest in AI research, contributing to open-source projects, or mentoring aspiring developers in the community.</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <div class="skill-icon"><i class="fab fa-python"></i></div>
+                    <h4>Python</h4>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon"><i class="fab fa-node-js"></i></div>
+                    <h4>React.js</h4>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon"><i class="fas fa-brain"></i></div>
+                    <h4>AI/ML</h4>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon"><i class="fab fa-aws"></i></div>
+                    <h4>AWS</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section fade-in">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card" onclick=openModal {<a href="https://imagify-fullstack-frontend.onrender.com/">Full-Stack</>/>}
+                <div class="project-image"></div>
+                <div class="project-content">
+                    <h3 class="project-title">AI Chat Assistant</h3>
+                    <p class="project-description">A sophisticated chatbot powered by GPT-4 with real-time conversation capabilities and context awareness.</p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">OpenAI</span>
+                        <span class="tag">FastAPI</span>
+                        <span class="tag">WebSocket</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card" onclick="openModal('project2')">
+                <div class="project-image"></div>
+                <div class="project-content">
+                    <h3 class="project-title">E-commerce Platform</h3>
+                    <p class="project-description">Full-stack e-commerce solution with microservices architecture, payment integration, and admin dashboard.</p>
+                    <div class="project-tags">
+                        <span class="tag">Node.js</span>
+                        <span class="tag">React</span>
+                        <span class="tag">MongoDB</span>
+                        <span class="tag">Stripe</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card" onclick="openModal('project3')">
+                <div class="project-image"></div>
+                <div class="project-content">
+                    <h3 class="project-title">Data Analytics Tool</h3>
+                    <p class="project-description">Advanced analytics platform for processing large datasets with machine learning insights and visualization.</p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Pandas</span>
+                        <span class="tag">Plotly</span>
+                        <span class="tag">Docker</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="section fade-in">
+        <h2 class="section-title">Certificates</h2>
+        <div class="certificates-grid">
+            <div class="certificate-card">
+                <div class="certificate-icon"><i class="fab fa-aws"></i></div>
+                <h3>AWS Solutions Architect</h3>
+                <p>Amazon Web Services</p>
+                <p><strong>2024</strong></p>
+            </div>
+            <div class="certificate-card">
+                <div class="certificate-icon"><i class="fas fa-robot"></i></div>
+                <h3>Machine Learning Specialization</h3>
+                <p>Stanford University</p>
+                <p><strong>2023</strong></p>
+            </div>
+            <div class="certificate-card">
+                <div class="certificate-icon"><i class="fab fa-python"></i></div>
+                <h3>Python Developer Certification</h3>
+                <p>Python Institute</p>
+                <p><strong>2023</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section fade-in">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-content">
+            <form class="contact-form" onsubmit="submitForm(event)">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">
+                    <i class="fas fa-paper-plane"></i> Send Message
+                </button>
+            </form>
+            <div class="social-links">
+                <a href="#" class="social-item">
+                    <i class="fab fa-linkedin social-icon"></i>
+                    <div>
+                        <h4>LinkedIn</h4>
+                        <p>Connect with me professionally</p>
+                    </div>
+                </a>
+                <a href="#" class="social-item">
+                    <i class="fab fa-github social-icon"></i>
+                    <div>
+                        <h4>GitHub</h4>
+                        <p>Check out my repositories</p>
+                    </div>
+                </a>
+                <a href="mailto:alex@example.com" class="social-item">
+                    <i class="fas fa-envelope social-icon"></i>
+                    <div>
+                        <h4>Email</h4>
+                        <p>alex@example.com</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Adarsh Singh❤️. All rights reserved.</p>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" onclick="scrollToTop()">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Modal -->
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()">&times;</button>
+            <div id="modal-body">
+                <!-- Modal content will be inserted here -->
+            </div>
+        </div>
+    </div>
+    <script src="portfolio.js"></script>
+
+</body>
+</html>
