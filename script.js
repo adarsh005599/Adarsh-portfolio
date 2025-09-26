@@ -1,11 +1,11 @@
 
-        // Theme Toggle
-        function toggleTheme() {
-            document.body.classList.toggle('light-theme');
-            const themeToggle = document.querySelector('.theme-toggle i');
-            themeToggle.classList.toggle('fa-moon');
-            themeToggle.classList.toggle('fa-sun');
-        }
+        // // Theme Toggle
+        // function toggleTheme() {
+        //     document.body.classList.toggle('light-theme');
+        //     const themeToggle = document.querySelector('.theme-toggle i');
+        //     themeToggle.classList.toggle('fa-moon');
+        //     themeToggle.classList.toggle('fa-sun');
+        // }
 
         // Scroll Progress Bar
         function updateScrollProgress() {
