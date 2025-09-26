@@ -35,4 +35,5 @@ npm run dev       # run locally
 
 📫 Contact
 Email: happysingh005599@gmail.com.com
-LinkedIn:[https://www.linkedin.com/in/adarsh-singh0099] / GitHub: [https://github.com/adarsh005599]
+LinkedIn:[https://www.linkedin.com/in/adarsh-singh0099] 
+GitHub: [https://github.com/adarsh005599]
