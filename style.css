@@ -216,8 +216,8 @@
   max-width: 500px;
   height: auto;
   object-fit: cover;
-  border: 1px solid black;
-  border-radius: 0; /* square */
+  border: 2px solid black;
+  border-radius: 50%; /* square */
 }
 
 /* Buttons */
