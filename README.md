@@ -2,6 +2,14 @@ Adarsh Singh — Portfolio
 
 Live Demo: adarsh-portfolio-pearl.vercel.app
 
+<p align="center">
+  <img src="profile.png" alt="horo" width="250"/>
+  <img src="about.png" alt="about" width="250"/>
+  <img src="projects.png" alt="projects page" width="250"/>
+  <img src="cirt.png" alt="cirt" width="250"/>
+  <img src="contact.png" alt="🤙" width="250"/>
+</p>
+
 A responsive personal portfolio to showcase my projects, experience & achievements.
 🛠 Built With
 HTML • CSS
