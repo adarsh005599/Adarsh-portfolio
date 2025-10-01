@@ -68,7 +68,6 @@
             z-index: 9999;
             animation: fadeOut 1s ease-in-out 2s forwards;
         }
-
         .loading-text {
             font-size: 2rem;
             font-weight: 600;
@@ -367,7 +366,7 @@
 
 .project-card {
   position: relative;
-  width: 400px;
+  width: 350px;
   height: 400px;
   border-radius: 20px;
   overflow: hidden;
