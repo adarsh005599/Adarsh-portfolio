@@ -451,7 +451,7 @@
 
 .certificate-card {
     position: relative;
-    width: 100%;
+    width: 400px;
     height: 350px;
     overflow: hidden;
     border-radius: 10px;
