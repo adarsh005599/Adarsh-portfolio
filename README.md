@@ -29,7 +29,7 @@ git clone https://github.com/adarsh005599/Adarsh-portfolio.git
 
 cd Adarsh-portfolio
 
-# (If you have any build steps)
+
 npm install
 npm run dev       # run locally
 
@@ -38,7 +38,7 @@ npm run dev       # run locally
 ├── index.html
 ├── style.css
 ├── script.js
-├── assets/ (images, icons, etc.)
+├── (images, icons, etc.)
 └── README.md
 
 📫 Contact
