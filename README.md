@@ -34,6 +34,7 @@ npm install
 npm run dev       # run locally
 
 📂 Repository Structure
+
 /
 
 ├── index.html
