@@ -10,6 +10,11 @@ Live Demo: https://adarsh-portfolio-pearl.vercel.app
   <img src="contact.png" alt="🤙" width="250"/>
 </p>
 
+Started with silence.  
+Now the graph sings.  
+Not for stars. Not for likes.  
+But for the quiet joy of building something that feels.
+
 A responsive personal portfolio to showcase my projects, experience & achievements.
 🛠 Built With
 HTML • CSS
