@@ -35,13 +35,20 @@ npm run dev       # run locally
 
 📂 Repository Structure
 /
+
 ├── index.html
+
 ├── style.css
+
 ├── script.js
+
 ├── (images, icons, etc.)
+
 └── README.md
 
 📫 Contact
 Email: happysingh005599@gmail.com.com
+
 LinkedIn:[https://www.linkedin.com/in/adarsh-singh0099] 
+
 GitHub: [https://github.com/adarsh005599]
